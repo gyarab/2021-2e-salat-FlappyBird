@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane prefHeight="249.0" prefWidth="285.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <HBox prefHeight="100.0" prefWidth="200.0">
+            <children>
+                <Pane fx:id="view" prefHeight="648.0" prefWidth="638.0">
+                    <children>
+                        <Button id="but" layoutX="120.0" layoutY="113.0" mnemonicParsing="false" onAction="#play" text="Play" />
+                        <Button id="but2" layoutX="123.0" layoutY="148.0" mnemonicParsing="false" onAction="#bot" text="Bot" />
+                  <Label fx:id="highscore" alignment="CENTER" layoutX="58.0" layoutY="50.0" prefHeight="26.0" prefWidth="169.0" />
+                    </children>
+                </Pane>
+            </children>
+        </HBox>
+    </children>
+</StackPane>

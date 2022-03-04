@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="200.0" prefWidth="226.0" xmlns="http://javafx.com/javafx/11.0.1"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SetUsername">
+    <children>
+        <Button fx:id="but" onAction="#submit" layoutX="81.0" layoutY="124.0" mnemonicParsing="false" text="Submit"/>
+        <TextField fx:id="name" layoutX="28.0" layoutY="87.0"/>
+        <Label layoutX="37.0" layoutY="51.0" prefHeight="26.0" prefWidth="153.0" text="Create your username:"/>
+    </children>
+</AnchorPane>

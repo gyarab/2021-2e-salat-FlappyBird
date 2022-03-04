@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<?import javafx.scene.image.Image?>
+
+<StackPane onMouseClicked="#onClick" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8"
+           xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.StageController">
+    <HBox>
+        <children>
+            <Pane prefHeight="600.0" prefWidth="831.0">
+                <ImageView fx:id="bird" fitHeight="68.0" fitWidth="74.0" layoutX="47.0" layoutY="141.0"
+                           pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="bird.png"/>
+                    </image>
+                </ImageView>
+                <ImageView fx:id="rDown" fitHeight="450.0" fitWidth="90.0" layoutX="741.0" layoutY="-275.0"
+                           pickOnBounds="true" preserveRatio="true" style="-fx-background-color: red">
+                    <image>
+                        <Image url="BottomPillar.png"/>
+                    </image>
+                </ImageView>
+                <ImageView fx:id="rTop" fitHeight="450.0" fitWidth="90.0" layoutX="741.0" layoutY="325.0"
+                           pickOnBounds="true" preserveRatio="true" style="-fx-background-color: red">
+                    <image>
+                        <Image url="TopPillar.png"/>
+                    </image>
+                </ImageView>
+                <ImageView fx:id="rDown2" fitHeight="450.0" fitWidth="90.0" layoutX="801.0" layoutY="-275.0"
+                           pickOnBounds="true" preserveRatio="true" style="-fx-background-color: red">
+                    <image>
+                        <Image url="BottomPillar.png"/>
+                    </image>
+                </ImageView>
+                <ImageView fx:id="rTop2" fitHeight="450.0" fitWidth="90.0" layoutX="801.0" layoutY="325.0"
+                           pickOnBounds="true" preserveRatio="true" style="-fx-background-color: red">
+                    <image>
+                        <Image url="TopPillar.png"/>
+                    </image>
+                </ImageView>
+                <Pane fx:id="pane" layoutX="260.0" layoutY="200.0" visible="false" prefHeight="141.0" prefWidth="280.0">
+                    <children>
+                        <Label fx:id="score" layoutX="19.0" layoutY="70.0" prefHeight="51.0" prefWidth="242.0"
+                               textFill="RED" visible="true">
+                            <font>
+                                <Font name="Arial Black" size="38.0"/>
+                            </font>
+                        </Label>
+                        <Label fx:id="label" layoutX="19.0" layoutY="13.0" prefHeight="48.0" prefWidth="242.0"
+                               text="Game Over" textFill="RED" visible="true">
+                            <font>
+                                <Font name="Arial Black" size="38.0"/>
+                            </font>
+                        </Label>
+                    </children>
+                </Pane>
+            </Pane>
+        </children>
+    </HBox>
+</StackPane>

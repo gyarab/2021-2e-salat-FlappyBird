@@ -1,0 +1,17 @@
+.root{
+    -fx-background-image: url("MenuBackground.png");
+}
+.button{
+    -fx-background-color: darkkhaki;
+    -fx-font-family: "Inconsolata Expanded SemiBold";
+}
+
+.label{
+    -fx-background-color: whitesmoke;
+    -fx-font-family: "Inconsolata Expanded SemiBold";
+}
+
+
+
+
+
