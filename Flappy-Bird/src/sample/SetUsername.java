@@ -25,11 +25,8 @@ public class SetUsername implements Initializable {
             if (name.getLength() < 20) {
                 ReadWriteXML.write(name.getText(), ReadWriteXML.readHighscore());
                 ((Stage) but.getScene().getWindow()).close();
-            }else{
-
+            } else {
             }
-
-
         }
     }
 

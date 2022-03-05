@@ -9,15 +9,16 @@
 
 <?import javafx.scene.image.Image?>
 
-<StackPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8"
-           xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.BotController">
+<StackPane onMouseClicked="#onClick" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8"
+           style="-fx-background-image: url(MainBackground.png);"
+           xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.StageController">
     <HBox>
         <children>
             <Pane prefHeight="600.0" prefWidth="831.0">
                 <ImageView fx:id="bird" fitHeight="68.0" fitWidth="74.0" layoutX="47.0" layoutY="141.0"
                            pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="bird.png"/>
+                        <Image url="Bird.png"/>
                     </image>
                 </ImageView>
                 <ImageView fx:id="rDown" fitHeight="450.0" fitWidth="90.0" layoutX="741.0" layoutY="-275.0"
@@ -53,7 +54,7 @@
                             </font>
                         </Label>
                         <Label fx:id="label" layoutX="19.0" layoutY="13.0" prefHeight="48.0" prefWidth="242.0"
-                               text="I've tried my best" textFill="RED" visible="true">
+                               text="Game Over" textFill="RED" visible="true">
                             <font>
                                 <Font name="Arial Black" size="38.0"/>
                             </font>
@@ -64,4 +65,3 @@
         </children>
     </HBox>
 </StackPane>
-

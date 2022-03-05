@@ -4,7 +4,7 @@
 <?import javafx.scene.layout.*?>
 
 
-<AnchorPane prefHeight="200.0" prefWidth="226.0" xmlns="http://javafx.com/javafx/11.0.1"
+<AnchorPane prefHeight="200.0" prefWidth="226.0" xmlns="http://javafx.com/javafx/11.0.1" style="-fx-background-color: #21D0FF;"
             xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SetUsername">
     <children>
         <Button fx:id="but" onAction="#submit" layoutX="81.0" layoutY="124.0" mnemonicParsing="false" text="Submit"/>

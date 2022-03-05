@@ -37,16 +37,14 @@ public class Controller implements Initializable {
             FXMLLoader fxmlLoader = new FXMLLoader();
             Pane root = fxmlLoader.load(getClass().getResource("setUsername.fxml").openStream());
             stage.setScene(new Scene(root));
-            root.getStylesheets().add(getClass().getResource("GameStylesheet.css").toExternalForm());
             stage.show();
             stage.setResizable(false);
         } else {
             setHighscore();
             Stage stage = new Stage();
             FXMLLoader fxmlLoader = new FXMLLoader();
-            Pane root = fxmlLoader.load(getClass().getResource("Stage2.fxml").openStream());
+            Pane root = fxmlLoader.load(getClass().getResource("StagePlay.fxml").openStream());
             stage.setScene(new Scene(root));
-            root.getStylesheets().add(getClass().getResource("GameStylesheet.css").toExternalForm());
             stage.show();
             stage.setResizable(false);
             stage.setOnCloseRequest(event -> {
@@ -68,9 +66,8 @@ public class Controller implements Initializable {
         setHighscore();
         Stage stage = new Stage();
         FXMLLoader fxmlLoader = new FXMLLoader();
-        Pane root = fxmlLoader.load(getClass().getResource("BotStage.fxml").openStream());
+        Pane root = fxmlLoader.load(getClass().getResource("StageBot.fxml").openStream());
         stage.setScene(new Scene(root));
-        root.getStylesheets().add(getClass().getResource("GameStylesheet.css").toExternalForm());
         stage.show();
         stage.setResizable(false);
         stage.setOnCloseRequest(event -> {
