@@ -1,25 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<style>
-    table, th, td {
-        border: 1px solid black;
-    }
-</style>
-<body>
-<table align="center" style="width:40%">
-    <tr>
-        <th>Username</th>
-        <th>Highscore</th>
-    </tr>
-    <tr>
-        <td>{{ name }}</td>
-        <td>{{ score }}</td>
-    </tr>
-</table>
+{% extends "base.html" %}
+{% block content %}
+<div align="center" class="center2">
+    <table align="center" style="width:40%">
 
-</body>
-</html>
+        <tr>
+            <th>Username</th>
+            <th>Highscore</th>
+        </tr>
+        <tr>
+            <td>{{ name }}</td>
+            <td>{{ score }}</td>
+        </tr>
+    </table>
+</div>
+{% endblock %}

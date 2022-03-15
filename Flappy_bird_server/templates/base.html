@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<style>
+    body {
+        font-family: 'Trebuchet MS', sans-serif;
+        background-color: #4C5757;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        color: black;
+        background-color: #788989;
+    }
+
+    th, td {
+        padding: 8px;
+        text-align: left;
+        border: 1px solid #d7dae5;
+    }
+
+    tr:hover {
+        background-color: #A6D8D4;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+    }
+
+    li {
+        float: left;
+    }
+
+    li a {
+        display: block;
+        color: black;
+        background-color: #B9CDDA;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover {
+        background-color: #A6D8D4;
+    }
+
+    li input {
+        border: none;
+        outline: none;
+        text-align: center;
+        display: block;
+        color: black;
+        background-color: #D7DAE5;
+        text-align: center;
+        box-sizing: border-box;
+        padding: 16px 16px;
+    }
+
+
+    li button {
+        border: none;
+        outline: none;
+        text-align: center;
+        display: block;
+        color: black;
+        background-color: #B9CDDA;
+        text-align: center;
+        padding: 16px 16px;
+        text-decoration: none;
+    }
+
+    li button:hover {
+        background-color: #A6D8D4;
+    }
+
+    .center {
+        width: 100%;
+        position: absolute;
+        left: 50%;
+        top: 40%;
+        transform: translate(-50%, -50%);
+    }
+
+    .center2 {
+        width: 100%;
+        position: absolute;
+        left: 50%;
+        top: 30%;
+        transform: translate(-50%, -50%);
+    }
+
+    .center3 {
+        text-align: center;
+        width: 40%;
+        position: absolute;
+        left: 50%;
+        top: 30%;
+        transform: translate(-50%, -50%);
+    }
+</style>
+
+<body>
+<ul>
+    <li class="home"><a href="/"><strong>Home</strong></a></li>
+    <li style="float:right "><input id="in" placeholder="Search username"/></li>
+    <li style="float: right ">
+        <button id="but" onclick="clicked()"><i class="fa fa-search"></i></button>
+    </li>
+
+
+</ul>
+{% block content %}
+{% endblock %}
+</body>
+
+<script>
+    let input = document.getElementById("in");
+    input.addEventListener("keyup", function (event) {
+        console.log("idk")
+        if (event.keyCode === 13) {
+            event.preventDefault();
+            document.getElementById("but").click();
+        }
+    });
+
+    function clicked() {
+        let x = document.getElementById("in").value;
+        window.location.href = "/" + x;
+    }
+
+
+</script>
+</html>
