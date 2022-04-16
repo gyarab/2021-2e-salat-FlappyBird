@@ -42,4 +42,4 @@ async def say_hello(name: str, request: Request):
 
         return templates.TemplateResponse('user.html', {'request': request, 'score': score, 'name': name})
     except:
-        return {"message": f'User: {name} not found'}
+        return templates.TemplateResponse('error.html', {'request': request, 'name': name})
